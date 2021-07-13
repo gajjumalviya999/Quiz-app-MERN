@@ -1,7 +1,7 @@
 const express = require('express')
 const cors=require('cors');
 const app = express()
-const port = 5000;
+const port = process.env.PORT||5000;
 const Java=require('./Questions/Java');
 const NodeJS=require('./Questions/NodeJS');
 const JavaScript= require('./Questions/JavaScript');
